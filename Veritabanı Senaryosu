@@ -1,0 +1,9 @@
+Ağaç Ve Orman Ürünleri Web Sitesi
+
+Veritabanında Bulunacak Tablolar; Ürün, Kategori,Boyut, İletişim, Login, Galeri, Hakkında, Değerlendirme ve Bilgi
+
+•	Birden çok ürün aynı boyuta sahip olabileceğinden boyutlar için ayrı bir tablo oluşturularak ürün tablosu içerisinde Boyut_FK ile Boyut tablosundaki Boyut_Id ilişkilendirilmiştir.
+
+•	Birden fazla ürün kategori içerisinde olabileceğinden kategoriler için ayrı bir tablo oluşturularak ürün tablosu içerisinde Kategori_FK ile Kategori tablosu içerisindeki Kategori_Id ilişkilendirilmiştir.
+
+•	Kalan tablolar veri tekrarı yapmadıkları ve bir ilişkilendirme yapılamadığı için ilişkilendirilmemişlerdir.
