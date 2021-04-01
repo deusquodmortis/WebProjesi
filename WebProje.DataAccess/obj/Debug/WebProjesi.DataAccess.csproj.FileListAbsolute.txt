@@ -1,0 +1,6 @@
+C:\Users\unalk\source\repos\WebProjesi\WebProje.DataAccess\bin\Debug\WebProje.DataAccess.dll
+C:\Users\unalk\source\repos\WebProjesi\WebProje.DataAccess\bin\Debug\WebProje.DataAccess.pdb
+C:\Users\unalk\source\repos\WebProjesi\WebProje.DataAccess\obj\Debug\WebProjesi.DataAccess.csprojAssemblyReference.cache
+C:\Users\unalk\source\repos\WebProjesi\WebProje.DataAccess\obj\Debug\WebProjesi.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\unalk\source\repos\WebProjesi\WebProje.DataAccess\obj\Debug\WebProje.DataAccess.dll
+C:\Users\unalk\source\repos\WebProjesi\WebProje.DataAccess\obj\Debug\WebProje.DataAccess.pdb

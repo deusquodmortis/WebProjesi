@@ -1,0 +1,6 @@
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\bin\Debug\WebProje.Business.dll
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\bin\Debug\WebProje.Business.pdb
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\obj\Debug\WebProjesi.Business.csprojAssemblyReference.cache
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\obj\Debug\WebProjesi.Business.csproj.CoreCompileInputs.cache
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\obj\Debug\WebProje.Business.dll
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\obj\Debug\WebProje.Business.pdb
