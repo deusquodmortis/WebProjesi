@@ -1,0 +1,199 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="WebProjesi.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Aydın Aydın</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="Resources1/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="Resources1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Resources1/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="Resources1/css/flaticon.css">
+    <link rel="stylesheet" href="Resources1/css/slicknav.css">
+    <link rel="stylesheet" href="Resources1/css/animate.min.css">
+    <link rel="stylesheet" href="Resources1/css/magnific-popup.css">
+    <link rel="stylesheet" href="Resources1/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="Resources1/css/themify-icons.css">
+    <link rel="stylesheet" href="Resources1/css/slick.css">
+    <link rel="stylesheet" href="Resources1/css/nice-select.css">
+    <link rel="stylesheet" href="Resources1/css/style.css">
+</head>
+<body>
+                <!-- Preloader Start -->
+<%--<div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="Resources1/img/logo/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>--%>
+<!-- Preloader Start -->
+<header>
+    <!-- Header Start -->
+    <div class="header-area">
+            <div class="main-header header-sticky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html"><img src="Resources1/img/logo/logo.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <!-- Main-menu -->
+                            <div class="main-menu f-right d-none d-lg-block">
+                                <nav>                              
+                                    <ul id="navigation">                                                          
+                                        <li><a href="Default.aspx"> Anasayfa</a></li>
+                                        <li><a href="Hakkimizda.aspx">Hakkımızda</a></li>
+                                        <li><a href="Galeri.aspx">Galeri</a></li>
+                                        <li><a href="Bilgi.aspx">Bilgi</a></li>
+                                        <li><a href="Iletisim.aspx">İletişim</a></li>
+                                        <li><a href="#">Deger Yok</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div> 
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Header End -->
+</header>
+<main>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</main>
+<footer>
+    <!-- Footer Start-->
+    <div class="footer-main" data-background="Resources1/img/gallery/section_bg4.png">
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-xl-2  col-lg-3 col-md-5 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                                <%--<div class="footer-logo">
+                                    <a href="index.html"><img src="Resources1/img/logo/logo.jpg" alt=""></a>
+                                </div>--%>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3  col-lg-3 col-lg-2 col-md-5 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Deger Yok</h4>
+                                <ul>
+                                    <li><a href="#">Deger Yok</a></li>
+                                    <li><a href="#">Deger Yok</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  col-lg-3 col-md-5 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Hakkımızda</h4>
+                                <ul>
+                                    <li><a href="#">Neden Biz</a></li>
+                                    <li><a href="#">Ürünlerimiz</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2  col-lg-3 col-md-5 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4>Konum</h4>
+                                <ul>
+                                    <li><a href="#">Hakkımızda</a></li>
+                                    <li>Telefon numarası falan filan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-border">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-xl-12 ">
+                                <div class="footer-copy-right text-center">
+                                    <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Aydın Aydın Ağaç Ve Orman Ürünleri</a></p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End-->
+</footer>
+
+    <!-- JS here -->
+
+    <script src="./Resources1/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./Resources1/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./Resources1/js/popper.min.js"></script>
+    <script src="./Resources1/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./Resources1/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./Resources1/js/owl.carousel.min.js"></script>
+    <script src="./Resources1/js/slick.min.js"></script>
+    <!-- Date Picker -->
+    <script src="./Resources1/js/gijgo.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./Resources1/js/wow.min.js"></script>
+    <script src="./Resources1/js/animated.headline.js"></script>
+    <script src="./Resources1/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./Resources1/js/jquery.scrollUp.min.js"></script>
+    <script src="./Resources1/js/jquery.nice-select.min.js"></script>
+    <script src="./Resources1/js/jquery.sticky.js"></script>
+
+    <!-- counter , waypoint -->
+    <script src="./Resources1/js/jquery.counterup.min.js"></script>
+    <script src="./Resources1/js/waypoints.min.js"></script>
+
+    <!-- contact js -->
+    <script src="./Resources1/js/contact.js"></script>
+    <script src="./Resources1/js/jquery.form.js"></script>
+    <script src="./Resources1/js/jquery.validate.min.js"></script>
+    <script src="./Resources1/js/mail-script.js"></script>
+    <script src="./Resources1/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="./Resources1/js/plugins.js"></script>
+    <script src="./Resources1/js/main.js"></script>
+</body>
+</html>

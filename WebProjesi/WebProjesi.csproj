@@ -67,11 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bilgi.aspx" />
-    <Content Include="Default.aspx" />
-    <Content Include="Galeri.aspx" />
-    <Content Include="Hakkımızda.aspx" />
-    <Content Include="Iletisim.aspx" />
+    <Content Include="Resources1\img\logo\logo.jpg" />
     <Content Include="Resources\css\animate.css" />
     <Content Include="Resources\css\animate.min.css" />
     <Content Include="Resources\css\bootstrap-touch-slider.css" />
@@ -164,21 +160,254 @@
     <Content Include="Resources\js\timeline.min.js" />
     <Content Include="Resources\css\style.css" />
     <Content Include="Web.config" />
+    <Content Include="Default.aspx" />
+    <Content Include="Bilgi.aspx" />
+    <Content Include="Galeri.aspx" />
+    <Content Include="Hakkimizda.aspx" />
+    <Content Include="Iletisim.aspx" />
+    <Content Include="Resources1\css\animate.min.css" />
+    <Content Include="Resources1\css\bootstrap.min.css" />
+    <Content Include="Resources1\css\flaticon.css" />
+    <Content Include="Resources1\css\fontawesome-all.min.css" />
+    <Content Include="Resources1\css\gijgo.css" />
+    <Content Include="Resources1\css\magnific-popup.css" />
+    <Content Include="Resources1\css\nice-select.css" />
+    <Content Include="Resources1\css\owl.carousel.min.css" />
+    <Content Include="Resources1\css\responsive.css" />
+    <Content Include="Resources1\css\slick.css" />
+    <Content Include="Resources1\css\slicknav.css" />
+    <Content Include="Resources1\css\style.css" />
+    <Content Include="Resources1\css\themify-icons.css" />
+    <Content Include="Resources1\fonts\fa-brands-400.svg" />
+    <Content Include="Resources1\fonts\fa-regular-400.svg" />
+    <Content Include="Resources1\fonts\fa-solid-900.svg" />
+    <Content Include="Resources1\fonts\flaticon.css" />
+    <Content Include="Resources1\fonts\flaticon.html" />
+    <Content Include="Resources1\fonts\Flaticon.svg" />
+    <Content Include="Resources1\fonts\themify.svg" />
+    <Content Include="Resources1\img\about\about_lft.png" />
+    <Content Include="Resources1\img\about\about_right.png" />
+    <Content Include="Resources1\img\about\pet_care.png" />
+    <Content Include="Resources1\img\adapt_icon\1.png" />
+    <Content Include="Resources1\img\adapt_icon\1.svg" />
+    <Content Include="Resources1\img\adapt_icon\2.png" />
+    <Content Include="Resources1\img\adapt_icon\3.png" />
+    <Content Include="Resources1\img\banner\dog.png" />
+    <Content Include="Resources1\img\banner\img.png" />
+    <Content Include="Resources1\img\blog\author.png" />
+    <Content Include="Resources1\img\blog\blog_4.png" />
+    <Content Include="Resources1\img\blog\learn_about_bg.png" />
+    <Content Include="Resources1\img\blog\single_blog_1.png" />
+    <Content Include="Resources1\img\blog\single_blog_2.png" />
+    <Content Include="Resources1\img\blog\single_blog_3.png" />
+    <Content Include="Resources1\img\blog\single_blog_4.png" />
+    <Content Include="Resources1\img\blog\single_blog_5.png" />
+    <Content Include="Resources1\img\blog\slide_thumb_1.png" />
+    <Content Include="Resources1\img\elements\a.jpg" />
+    <Content Include="Resources1\img\elements\a2.jpg" />
+    <Content Include="Resources1\img\elements\d.jpg" />
+    <Content Include="Resources1\img\elements\disabled-check.png" />
+    <Content Include="Resources1\img\elements\disabled-radio.png" />
+    <Content Include="Resources1\img\elements\f1.jpg" />
+    <Content Include="Resources1\img\elements\f2.jpg" />
+    <Content Include="Resources1\img\elements\f3.jpg" />
+    <Content Include="Resources1\img\elements\f4.jpg" />
+    <Content Include="Resources1\img\elements\f5.jpg" />
+    <Content Include="Resources1\img\elements\f6.jpg" />
+    <Content Include="Resources1\img\elements\f7.jpg" />
+    <Content Include="Resources1\img\elements\f8.jpg" />
+    <Content Include="Resources1\img\elements\g1.jpg" />
+    <Content Include="Resources1\img\elements\g2.jpg" />
+    <Content Include="Resources1\img\elements\g3.jpg" />
+    <Content Include="Resources1\img\elements\g4.jpg" />
+    <Content Include="Resources1\img\elements\g5.jpg" />
+    <Content Include="Resources1\img\elements\g6.jpg" />
+    <Content Include="Resources1\img\elements\g7.jpg" />
+    <Content Include="Resources1\img\elements\g8.jpg" />
+    <Content Include="Resources1\img\elements\primary-check.png" />
+    <Content Include="Resources1\img\elements\primary-radio.png" />
+    <Content Include="Resources1\img\elements\success-check.png" />
+    <Content Include="Resources1\img\elements\success-radio.png" />
+    <Content Include="Resources1\img\favicon.ico" />
+    <Content Include="Resources1\img\flower\from-bottom.png" />
+    <Content Include="Resources1\img\flower\from-top.png" />
+    <Content Include="Resources1\img\gallery\1.png" />
+    <Content Include="Resources1\img\gallery\2.png" />
+    <Content Include="Resources1\img\gallery\3.png" />
+    <Content Include="Resources1\img\gallery\gallery01.png" />
+    <Content Include="Resources1\img\gallery\gallery02.png" />
+    <Content Include="Resources1\img\gallery\gallery03.png" />
+    <Content Include="Resources1\img\gallery\gallery04.png" />
+    <Content Include="Resources1\img\gallery\gallery05.png" />
+    <Content Include="Resources1\img\gallery\gallery06.png" />
+    <Content Include="Resources1\img\gallery\gallery07.png" />
+    <Content Include="Resources1\img\gallery\gallery08.png" />
+    <Content Include="Resources1\img\gallery\gallery1.png" />
+    <Content Include="Resources1\img\gallery\gallery2.png" />
+    <Content Include="Resources1\img\gallery\gallery3.png" />
+    <Content Include="Resources1\img\gallery\gallery4.png" />
+    <Content Include="Resources1\img\gallery\section_bg1.png" />
+    <Content Include="Resources1\img\gallery\section_bg2.png" />
+    <Content Include="Resources1\img\gallery\section_bg3.png" />
+    <Content Include="Resources1\img\gallery\section_bg4.png" />
+    <Content Include="Resources1\img\gallery\shape1.png" />
+    <Content Include="Resources1\img\gallery\shape2.png" />
+    <Content Include="Resources1\img\gallery\story1.jpg" />
+    <Content Include="Resources1\img\gallery\story2.jpg" />
+    <Content Include="Resources1\img\gallery\tittle_img.png" />
+    <Content Include="Resources1\img\gallery\tittle_img2.png" />
+    <Content Include="Resources1\img\hero\hero2.png" />
+    <Content Include="Resources1\img\hero\hero_shape1.png" />
+    <Content Include="Resources1\img\hero\hero_shape2.png" />
+    <Content Include="Resources1\img\hero\homeHero_1.jpg" />
+    <Content Include="Resources1\img\logo\logo2_footer.png" />
+    <Content Include="Resources1\img\offers\1.png" />
+    <Content Include="Resources1\img\offers\2.png" />
+    <Content Include="Resources1\img\offers\3.png" />
+    <Content Include="Resources1\img\our_blog\blog-img1.jpg" />
+    <Content Include="Resources1\img\post\next.png" />
+    <Content Include="Resources1\img\post\post_1.png" />
+    <Content Include="Resources1\img\post\post_10.png" />
+    <Content Include="Resources1\img\post\post_2.png" />
+    <Content Include="Resources1\img\post\post_3.png" />
+    <Content Include="Resources1\img\post\post_4.png" />
+    <Content Include="Resources1\img\post\post_5.png" />
+    <Content Include="Resources1\img\post\post_6.png" />
+    <Content Include="Resources1\img\post\post_7.png" />
+    <Content Include="Resources1\img\post\post_8.png" />
+    <Content Include="Resources1\img\post\post_9.png" />
+    <Content Include="Resources1\img\post\preview.png" />
+    <Content Include="Resources1\img\prising\1.png" />
+    <Content Include="Resources1\img\prising\10.png" />
+    <Content Include="Resources1\img\prising\2.png" />
+    <Content Include="Resources1\img\prising\3.png" />
+    <Content Include="Resources1\img\prising\4.png" />
+    <Content Include="Resources1\img\prising\5.png" />
+    <Content Include="Resources1\img\prising\6.png" />
+    <Content Include="Resources1\img\prising\7.png" />
+    <Content Include="Resources1\img\prising\8.png" />
+    <Content Include="Resources1\img\prising\9.png" />
+    <Content Include="Resources1\img\service\1.png" />
+    <Content Include="Resources1\img\service\2.png" />
+    <Content Include="Resources1\img\service\3.png" />
+    <Content Include="Resources1\img\service\brand1.jpg" />
+    <Content Include="Resources1\img\service\brand2.jpg" />
+    <Content Include="Resources1\img\service\brand3.jpg" />
+    <Content Include="Resources1\img\service\brand4.jpg" />
+    <Content Include="Resources1\img\service\brand5.jpg" />
+    <Content Include="Resources1\img\service\service1.png" />
+    <Content Include="Resources1\img\service\service2.png" />
+    <Content Include="Resources1\img\service\service3.png" />
+    <Content Include="Resources1\img\service\services_flower1.png" />
+    <Content Include="Resources1\img\service\service_icon_1.png" />
+    <Content Include="Resources1\img\service\service_icon_2.png" />
+    <Content Include="Resources1\img\service\service_icon_3.png" />
+    <Content Include="Resources1\img\service\service_icon_bg_1.png" />
+    <Content Include="Resources1\img\team\1.png" />
+    <Content Include="Resources1\img\team\2.png" />
+    <Content Include="Resources1\img\team\3.png" />
+    <Content Include="Resources1\js\animated.headline.js" />
+    <Content Include="Resources1\js\bootstrap.min.js" />
+    <Content Include="Resources1\js\contact.js" />
+    <Content Include="Resources1\js\gijgo.min.js" />
+    <Content Include="Resources1\js\jquery.ajaxchimp.min.js" />
+    <Content Include="Resources1\js\jquery.counterup.min.js" />
+    <Content Include="Resources1\js\jquery.form.js" />
+    <Content Include="Resources1\js\jquery.magnific-popup.js" />
+    <Content Include="Resources1\js\jquery.nice-select.min.js" />
+    <Content Include="Resources1\js\jquery.paroller.min.js" />
+    <Content Include="Resources1\js\jquery.scrollUp.min.js" />
+    <Content Include="Resources1\js\jquery.slicknav.min.js" />
+    <Content Include="Resources1\js\jquery.sticky.js" />
+    <Content Include="Resources1\js\jquery.validate.min.js" />
+    <Content Include="Resources1\js\mail-script.js" />
+    <Content Include="Resources1\js\main.js" />
+    <Content Include="Resources1\js\one-page-nav-min.js" />
+    <Content Include="Resources1\js\owl.carousel.min.js" />
+    <Content Include="Resources1\js\plugins.js" />
+    <Content Include="Resources1\js\popper.min.js" />
+    <Content Include="Resources1\js\slick.min.js" />
+    <Content Include="Resources1\js\vendor\jquery-1.12.4.min.js" />
+    <Content Include="Resources1\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="Resources1\js\waypoints.min.js" />
+    <Content Include="Resources1\js\wow.min.js" />
+    <Content Include="Doc\css\font-awesome.min.css" />
+    <Content Include="Doc\css\main.css" />
+    <Content Include="Doc\css\normalize.min.css" />
+    <Content Include="Doc\fonts\fontawesome-webfont.svg" />
+    <Content Include="Doc\img\logo.png" />
+    <Content Include="Doc\index.html" />
+    <Content Include="Doc\js\custom.js" />
+    <Content Include="Doc\js\jquery-1.11.0.min.js" />
+    <Content Include="Doc\js\jquery.nav.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shAutoloader.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushAppleScript.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushAS3.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushBash.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushColdFusion.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushCpp.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushCSharp.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushCss.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushDelphi.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushDiff.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushErlang.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushGroovy.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushJava.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushJavaFX.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushJScript.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushPerl.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushPhp.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushPlain.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushPowerShell.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushPython.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushRuby.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushSass.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushScala.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushSql.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushVb.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shBrushXml.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shCore.js" />
+    <Content Include="Doc\syntax-highlighter\scripts\shLegacy.js" />
+    <Content Include="Doc\syntax-highlighter\styles\shCore.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shCoreDefault.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shCoreDjango.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shCoreEclipse.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shCoreEmacs.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shCoreMDUltra.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shCoreMidnight.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shCoreRDark.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shThemeDefault.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shThemeDjango.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shThemeEclipse.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shThemeEmacs.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shThemeMDUltra.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shThemeMidnight.css" />
+    <Content Include="Doc\syntax-highlighter\styles\shThemeRDark.css" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bilgi.aspx.cs">
-      <DependentUpon>Bilgi.aspx</DependentUpon>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Bilgi.aspx.designer.cs">
-      <DependentUpon>Bilgi.aspx</DependentUpon>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilgi.aspx.cs">
+      <DependentUpon>Bilgi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilgi.aspx.designer.cs">
+      <DependentUpon>Bilgi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Galeri.aspx.cs">
       <DependentUpon>Galeri.aspx</DependentUpon>
@@ -187,12 +416,12 @@
     <Compile Include="Galeri.aspx.designer.cs">
       <DependentUpon>Galeri.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Hakkımızda.aspx.cs">
-      <DependentUpon>Hakkımızda.aspx</DependentUpon>
+    <Compile Include="Hakkimizda.aspx.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Hakkımızda.aspx.designer.cs">
-      <DependentUpon>Hakkımızda.aspx</DependentUpon>
+    <Compile Include="Hakkimizda.aspx.designer.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
     </Compile>
     <Compile Include="Iletisim.aspx.cs">
       <DependentUpon>Iletisim.aspx</DependentUpon>
@@ -201,9 +430,9 @@
     <Compile Include="Iletisim.aspx.designer.cs">
       <DependentUpon>Iletisim.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Main.Master" />
     <None Include="packages.config" />
     <Content Include="Resources\fonts\Flaticon.eot" />
     <Content Include="Resources\fonts\Flaticon.ttf" />
@@ -219,6 +448,59 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Resources1\css\style.map" />
+    <Content Include="Resources1\fonts\fa-brands-400.eot" />
+    <Content Include="Resources1\fonts\fa-brands-400.ttf" />
+    <Content Include="Resources1\fonts\fa-brands-400.woff" />
+    <Content Include="Resources1\fonts\fa-brands-400.woff2" />
+    <Content Include="Resources1\fonts\fa-regular-400.eot" />
+    <Content Include="Resources1\fonts\fa-regular-400.ttf" />
+    <Content Include="Resources1\fonts\fa-regular-400.woff" />
+    <Content Include="Resources1\fonts\fa-regular-400.woff2" />
+    <Content Include="Resources1\fonts\fa-solid-900.eot" />
+    <Content Include="Resources1\fonts\fa-solid-900.ttf" />
+    <Content Include="Resources1\fonts\fa-solid-900.woff" />
+    <Content Include="Resources1\fonts\fa-solid-900.woff2" />
+    <Content Include="Resources1\fonts\Flaticon.eot" />
+    <Content Include="Resources1\fonts\Flaticon.ttf" />
+    <Content Include="Resources1\fonts\Flaticon.woff" />
+    <Content Include="Resources1\fonts\Flaticon.woff2" />
+    <Content Include="Resources1\fonts\themify.eot" />
+    <Content Include="Resources1\fonts\themify.ttf" />
+    <Content Include="Resources1\fonts\themify.woff" />
+    <Content Include="Resources1\scss\style.scss" />
+    <Content Include="Resources1\scss\_animation.scss" />
+    <Content Include="Resources1\scss\_blog.scss" />
+    <Content Include="Resources1\scss\_blog_page.scss" />
+    <Content Include="Resources1\scss\_bradcam.scss" />
+    <Content Include="Resources1\scss\_color.scss" />
+    <Content Include="Resources1\scss\_common.scss" />
+    <Content Include="Resources1\scss\_contact.scss" />
+    <Content Include="Resources1\scss\_count_down.scss" />
+    <Content Include="Resources1\scss\_david-droga.scss" />
+    <Content Include="Resources1\scss\_elements.scss" />
+    <Content Include="Resources1\scss\_extend.scss" />
+    <Content Include="Resources1\scss\_extra.scss" />
+    <Content Include="Resources1\scss\_footer.scss" />
+    <Content Include="Resources1\scss\_gallery.scss" />
+    <Content Include="Resources1\scss\_gallery_2.scss" />
+    <Content Include="Resources1\scss\_generating-area.scss" />
+    <Content Include="Resources1\scss\_gift.scss" />
+    <Content Include="Resources1\scss\_h1-contact.scss" />
+    <Content Include="Resources1\scss\_h1-hero.scss" />
+    <Content Include="Resources1\scss\_headerMenu.scss" />
+    <Content Include="Resources1\scss\_mixins.scss" />
+    <Content Include="Resources1\scss\_our-story.scss" />
+    <Content Include="Resources1\scss\_overlay.scss" />
+    <Content Include="Resources1\scss\_services.scss" />
+    <Content Include="Resources1\scss\_services_section.scss" />
+    <Content Include="Resources1\scss\_team.scss" />
+    <Content Include="Resources1\scss\_variables.scss" />
+    <Content Include="Doc\fonts\fontawesome-webfont.eot" />
+    <Content Include="Doc\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Doc\fonts\fontawesome-webfont.woff" />
+    <Content Include="Doc\fonts\FontAwesome.otf" />
+    <Content Include="Doc\img\Thumbs.db" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
