@@ -69,104 +69,70 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\cs-skin-elastic.css" />
+    <Content Include="assets\css\lib\chosen\chosen-sprite%402x.png" />
+    <Content Include="assets\css\lib\chosen\chosen-sprite.png" />
+    <Content Include="assets\css\lib\chosen\chosen.css" />
+    <Content Include="assets\css\lib\chosen\chosen.min.css" />
+    <Content Include="assets\css\lib\datatable\buttons.bootstrap.min.css" />
+    <Content Include="assets\css\lib\datatable\buttons.dataTables.min.css" />
+    <Content Include="assets\css\lib\datatable\dataTables.bootstrap.min.css" />
+    <Content Include="assets\css\lib\vector-map\jqvmap.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\icomoon\icomoon.svg" />
+    <Content Include="assets\fonts\icomoon\index.html" />
+    <Content Include="assets\js\dashboard.js" />
+    <Content Include="assets\js\init\chartjs-init.js" />
+    <Content Include="assets\js\init\datatables-init.js" />
+    <Content Include="assets\js\init\flot-chart-init.js" />
+    <Content Include="assets\js\init\fullcalendar-init.js" />
+    <Content Include="assets\js\init\gmap-init.js" />
+    <Content Include="assets\js\init\peitychart-init.js" />
+    <Content Include="assets\js\init\vector-init.js" />
+    <Content Include="assets\js\init\weather-init.js" />
+    <Content Include="assets\js\lib\chosen\chosen.jquery.js" />
+    <Content Include="assets\js\lib\chosen\chosen.jquery.min.js" />
+    <Content Include="assets\js\lib\chosen\chosen.proto.js" />
+    <Content Include="assets\js\lib\chosen\chosen.proto.min.js" />
+    <Content Include="assets\js\lib\data-table\buttons.bootstrap.min.js" />
+    <Content Include="assets\js\lib\data-table\buttons.colVis.min.js" />
+    <Content Include="assets\js\lib\data-table\buttons.flash.min.js" />
+    <Content Include="assets\js\lib\data-table\buttons.html5.min.js" />
+    <Content Include="assets\js\lib\data-table\buttons.print.min.js" />
+    <Content Include="assets\js\lib\data-table\dataTables.bootstrap.min.js" />
+    <Content Include="assets\js\lib\data-table\dataTables.buttons.min.js" />
+    <Content Include="assets\js\lib\data-table\datatables.min.js" />
+    <Content Include="assets\js\lib\data-table\jquery-1.12.4.js" />
+    <Content Include="assets\js\lib\data-table\jquery.dataTables.min.js" />
+    <Content Include="assets\js\lib\data-table\jszip.min.js" />
+    <Content Include="assets\js\lib\data-table\pdfmake.min.js" />
+    <Content Include="assets\js\lib\data-table\vfs_fonts.js" />
+    <Content Include="assets\js\lib\gmap\gmapApi.js" />
+    <Content Include="assets\js\lib\gmap\gmaps.js" />
+    <Content Include="assets\js\lib\gmap\gmaps.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\vmap.sampledata.js" />
+    <Content Include="assets\js\widgets.js" />
+    <Content Include="assets\scss\style.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="images\admin.jpg" />
+    <Content Include="images\avatar\1.jpg" />
+    <Content Include="images\avatar\2.jpg" />
+    <Content Include="images\avatar\3.jpg" />
+    <Content Include="images\avatar\4.jpg" />
+    <Content Include="images\avatar\5.jpg" />
+    <Content Include="images\avatar\6.jpg" />
+    <Content Include="images\avatar\64-1.jpg" />
+    <Content Include="images\avatar\64-2.jpg" />
+    <Content Include="images\favicon.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo2.png" />
     <Content Include="Resources1\img\logo\logo.jpg" />
-    <Content Include="Resources\css\animate.css" />
-    <Content Include="Resources\css\animate.min.css" />
-    <Content Include="Resources\css\bootstrap-touch-slider.css" />
-    <Content Include="Resources\css\bootstrap.min.css" />
-    <Content Include="Resources\css\colors.css" />
-    <Content Include="Resources\css\custom.css" />
-    <Content Include="Resources\css\flaticon.css" />
-    <Content Include="Resources\css\font-awesome.css" />
-    <Content Include="Resources\css\font-awesome.min.css" />
-    <Content Include="Resources\css\owl.carousel.css" />
-    <Content Include="Resources\css\prettyPhoto.css" />
-    <Content Include="Resources\css\pr_loading.css" />
-    <Content Include="Resources\css\responsive.css" />
-    <Content Include="Resources\css\timeline.min.css" />
-    <Content Include="Resources\css\versions.css" />
-    <Content Include="Resources\fonts\Flaticon.svg" />
-    <Content Include="Resources\fonts\fontawesome-webfont.svg" />
-    <Content Include="Resources\images\about_02.jpg" />
-    <Content Include="Resources\images\about_03.jpg" />
-    <Content Include="Resources\images\ajax-loader.gif" />
-    <Content Include="Resources\images\arrow-left.svg" />
-    <Content Include="Resources\images\arrow-right.svg" />
-    <Content Include="Resources\images\banner.jpg" />
-    <Content Include="Resources\images\bg.png" />
-    <Content Include="Resources\images\hosting_01.jpg" />
-    <Content Include="Resources\images\hosting_02.jpg" />
-    <Content Include="Resources\images\hosting_03.jpg" />
-    <Content Include="Resources\images\img-01.jpg" />
-    <Content Include="Resources\images\img-02.jpg" />
-    <Content Include="Resources\images\img-03.jpg" />
-    <Content Include="Resources\images\img-04.jpg" />
-    <Content Include="Resources\images\logo-hosting.png" />
-    <Content Include="Resources\images\logo_01.png" />
-    <Content Include="Resources\images\logo_02.png" />
-    <Content Include="Resources\images\logo_03.png" />
-    <Content Include="Resources\images\logo_04.png" />
-    <Content Include="Resources\images\logo_05.png" />
-    <Content Include="Resources\images\logo_06.png" />
-    <Content Include="Resources\images\parallax_04.jpg" />
-    <Content Include="Resources\images\prettyPhoto\dark_rounded\btnNext.png" />
-    <Content Include="Resources\images\prettyPhoto\dark_rounded\btnPrevious.png" />
-    <Content Include="Resources\images\prettyPhoto\dark_rounded\contentPattern.png" />
-    <Content Include="Resources\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
-    <Content Include="Resources\images\prettyPhoto\dark_rounded\loader.gif" />
-    <Content Include="Resources\images\prettyPhoto\dark_rounded\sprite.png" />
-    <Content Include="Resources\images\prettyPhoto\dark_square\btnNext.png" />
-    <Content Include="Resources\images\prettyPhoto\dark_square\btnPrevious.png" />
-    <Content Include="Resources\images\prettyPhoto\dark_square\contentPattern.png" />
-    <Content Include="Resources\images\prettyPhoto\dark_square\default_thumbnail.gif" />
-    <Content Include="Resources\images\prettyPhoto\dark_square\loader.gif" />
-    <Content Include="Resources\images\prettyPhoto\dark_square\sprite.png" />
-    <Content Include="Resources\images\prettyPhoto\default\default_thumb.png" />
-    <Content Include="Resources\images\prettyPhoto\default\loader.gif" />
-    <Content Include="Resources\images\prettyPhoto\default\sprite.png" />
-    <Content Include="Resources\images\prettyPhoto\default\sprite_next.png" />
-    <Content Include="Resources\images\prettyPhoto\default\sprite_prev.png" />
-    <Content Include="Resources\images\prettyPhoto\default\sprite_x.png" />
-    <Content Include="Resources\images\prettyPhoto\default\sprite_y.png" />
-    <Content Include="Resources\images\prettyPhoto\facebook\btnNext.png" />
-    <Content Include="Resources\images\prettyPhoto\facebook\btnPrevious.png" />
-    <Content Include="Resources\images\prettyPhoto\facebook\contentPatternBottom.png" />
-    <Content Include="Resources\images\prettyPhoto\facebook\contentPatternLeft.png" />
-    <Content Include="Resources\images\prettyPhoto\facebook\contentPatternRight.png" />
-    <Content Include="Resources\images\prettyPhoto\facebook\contentPatternTop.png" />
-    <Content Include="Resources\images\prettyPhoto\facebook\default_thumbnail.gif" />
-    <Content Include="Resources\images\prettyPhoto\facebook\loader.gif" />
-    <Content Include="Resources\images\prettyPhoto\facebook\sprite.png" />
-    <Content Include="Resources\images\prettyPhoto\light_rounded\btnNext.png" />
-    <Content Include="Resources\images\prettyPhoto\light_rounded\btnPrevious.png" />
-    <Content Include="Resources\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
-    <Content Include="Resources\images\prettyPhoto\light_rounded\loader.gif" />
-    <Content Include="Resources\images\prettyPhoto\light_rounded\sprite.png" />
-    <Content Include="Resources\images\prettyPhoto\light_square\btnNext.png" />
-    <Content Include="Resources\images\prettyPhoto\light_square\btnPrevious.png" />
-    <Content Include="Resources\images\prettyPhoto\light_square\default_thumbnail.gif" />
-    <Content Include="Resources\images\prettyPhoto\light_square\loader.gif" />
-    <Content Include="Resources\images\prettyPhoto\light_square\sprite.png" />
-    <Content Include="Resources\images\slider-01.jpg" />
-    <Content Include="Resources\images\slider-02.jpg" />
-    <Content Include="Resources\images\slider-03.jpg" />
-    <Content Include="Resources\images\testi_01.png" />
-    <Content Include="Resources\images\testi_02.png" />
-    <Content Include="Resources\images\testi_03.png" />
-    <Content Include="Resources\images\world-map.png" />
-    <Content Include="Resources\js\01-custom-places-example.js" />
-    <Content Include="Resources\js\all.js" />
-    <Content Include="Resources\js\custom.js" />
-    <Content Include="Resources\js\mapsed.js" />
-    <Content Include="Resources\js\modernizer.js" />
-    <Content Include="Resources\js\timeline.min.js" />
-    <Content Include="Resources\css\style.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -190,6 +156,16 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Admin.Master" />
+    <Content Include="AdminDefault.aspx" />
+    <Content Include="assets\css\style.css.map" />
+    <Content Include="assets\fonts\icomoon\icomoon.eot" />
+    <Content Include="assets\fonts\icomoon\icomoon.ttf" />
+    <Content Include="assets\fonts\icomoon\icomoon.woff" />
+    <Content Include="assets\scss\style.css.map" />
+    <Content Include="assets\scss\style.scss" />
+    <Content Include="images\.gitignore" />
+    <Content Include="images\logo.psd" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -494,6 +470,13 @@
     <Content Include="Doc\syntax-highlighter\styles\shThemeRDark.css" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -537,18 +520,17 @@
     <Compile Include="Iletisim.aspx.designer.cs">
       <DependentUpon>Iletisim.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminDefault.aspx.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDefault.aspx.designer.cs">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Main.Master" />
     <None Include="packages.config" />
-    <Content Include="Resources\fonts\Flaticon.eot" />
-    <Content Include="Resources\fonts\Flaticon.ttf" />
-    <Content Include="Resources\fonts\Flaticon.woff" />
-    <Content Include="Resources\fonts\fontawesome-webfont.eot" />
-    <Content Include="Resources\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Resources\fonts\fontawesome-webfont.woff" />
-    <Content Include="Resources\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Resources\fonts\FontAwesome.otf" />
     <Content Include="Scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.0.0.min.map" />
     <Content Include="Scripts\umd\popper.min.js.map" />

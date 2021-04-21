@@ -10,15 +10,6 @@ namespace WebProje.DataAccess
     public class BilgiData
     {
         DBConnection baglanti = new DBConnection();
-
-        public string infoname1 { get; set; }
-        public string info1 { get; set; }
-        public string infoname2 { get; set; }
-        public string info2 { get; set; }
-        public string infoname3 { get; set; }
-        public string info3 { get; set; }
-        public string infoname4 { get; set; }
-        public string info4 { get; set; }
         public static string[] name = new string[10];
         public static string[] info = new string[10];
 
@@ -36,8 +27,18 @@ namespace WebProje.DataAccess
                     info[i] = oku["Bilgi_Icerik"].ToString();
 
                 }
+                con.Close();
             }
-            
+            con.Close();
+        }
+
+        public void BoyutEkle(string size2)
+        {
+            SqlConnection con = baglanti.Baglan();
+            SqlCommand komut = new SqlCommand("INSERT INTO Boyut VALUES ('" + size2 + "')", con);
+            con.Open();
+            komut.ExecuteNonQuery();
+            con.Close();
         }
     }
 }

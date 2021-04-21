@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AydinAydinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'AydinAydin.dbo.Bilgi' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Bilgi">
+          <Key>
+            <PropertyRef Name="Bilgi_Id" />
+          </Key>
+          <Property Name="Bilgi_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Bilgi_Ad" Type="varchar(max)" />
+          <Property Name="Bilgi_Icerik" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Boyut">
+          <Key>
+            <PropertyRef Name="Boyut_Id" />
+          </Key>
+          <Property Name="Boyut_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Boyut_Adi" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Degerlendirme">
+          <Key>
+            <PropertyRef Name="Degerlendirme_Id" />
+          </Key>
+          <Property Name="Degerlendirme_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Degerlendirme_Ad" Type="varchar(max)" />
+          <Property Name="Degerlendirme_Aciklama" Type="varchar(max)" />
+          <Property Name="Degerlendirme_Tarih" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Galeri">
+          <Key>
+            <PropertyRef Name="Galeri_Id" />
+          </Key>
+          <Property Name="Galeri_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Galeri_Adi" Type="varchar(max)" />
+          <Property Name="Galeri_Yeri" Type="varchar(max)" />
+          <Property Name="Galeri_Tarih" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Hakkinda">
+          <Key>
+            <PropertyRef Name="Hakkinda_Id" />
+          </Key>
+          <Property Name="Hakkinda_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Hakkinda_Aciklama" Type="varchar(max)" />
+          <Property Name="Hakkinda_Adres" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Iletisim">
+          <Key>
+            <PropertyRef Name="Iletisim_Id" />
+          </Key>
+          <Property Name="Iletisim_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Iletisim_Mail" Type="varchar(max)" />
+          <Property Name="Iletisim_Tel" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Kategori">
+          <Key>
+            <PropertyRef Name="Kategori_Id" />
+          </Key>
+          <Property Name="Kategori_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kategori_Adi" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="Login_Id" />
+          </Key>
+          <Property Name="Login_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Login_Username" Type="varchar(max)" />
+          <Property Name="Login_Pass" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Urun">
+          <Key>
+            <PropertyRef Name="Urun_Id" />
+          </Key>
+          <Property Name="Urun_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Urun_Adi" Type="varchar(max)" />
+          <Property Name="Urun_Aciklama" Type="varchar(max)" />
+          <Property Name="Kategori_FK" Type="int" />
+          <Property Name="Boyut_FK" Type="int" />
+        </EntityType>
+        <Association Name="FK_Urun_Boyut">
+          <End Role="Boyut" Type="Self.Boyut" Multiplicity="0..1" />
+          <End Role="Urun" Type="Self.Urun" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Boyut">
+              <PropertyRef Name="Boyut_Id" />
+            </Principal>
+            <Dependent Role="Urun">
+              <PropertyRef Name="Boyut_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Urun_Kategori">
+          <End Role="Kategori" Type="Self.Kategori" Multiplicity="0..1" />
+          <End Role="Urun" Type="Self.Urun" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kategori">
+              <PropertyRef Name="Kategori_Id" />
+            </Principal>
+            <Dependent Role="Urun">
+              <PropertyRef Name="Kategori_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AydinAydinModelStoreContainer">
+          <EntitySet Name="Boyut" EntityType="Self.Boyut" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Degerlendirme" EntityType="Self.Degerlendirme" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Galeri" EntityType="Self.Galeri" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Hakkinda" EntityType="Self.Hakkinda" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Iletisim" EntityType="Self.Iletisim" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kategori" EntityType="Self.Kategori" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Urun" EntityType="Self.Urun" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Bilgi" EntityType="Self.Bilgi" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Bilgi].[Bilgi_Id] AS [Bilgi_Id], 
+    [Bilgi].[Bilgi_Ad] AS [Bilgi_Ad], 
+    [Bilgi].[Bilgi_Icerik] AS [Bilgi_Icerik]
+    FROM [dbo].[Bilgi] AS [Bilgi]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_Urun_Boyut" Association="Self.FK_Urun_Boyut">
+            <End Role="Boyut" EntitySet="Boyut" />
+            <End Role="Urun" EntitySet="Urun" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Urun_Kategori" Association="Self.FK_Urun_Kategori">
+            <End Role="Kategori" EntitySet="Kategori" />
+            <End Role="Urun" EntitySet="Urun" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AydinAydinModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Boyut">
+          <Key>
+            <PropertyRef Name="Boyut_Id" />
+          </Key>
+          <Property Name="Boyut_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Boyut_Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Uruns" Relationship="Self.FK_Urun_Boyut" FromRole="Boyut" ToRole="Urun" />
+        </EntityType>
+        <EntityType Name="Degerlendirme">
+          <Key>
+            <PropertyRef Name="Degerlendirme_Id" />
+          </Key>
+          <Property Name="Degerlendirme_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Degerlendirme_Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Degerlendirme_Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Degerlendirme_Tarih" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Galeri">
+          <Key>
+            <PropertyRef Name="Galeri_Id" />
+          </Key>
+          <Property Name="Galeri_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Galeri_Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Galeri_Yeri" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Galeri_Tarih" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Hakkinda">
+          <Key>
+            <PropertyRef Name="Hakkinda_Id" />
+          </Key>
+          <Property Name="Hakkinda_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Hakkinda_Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Hakkinda_Adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Iletisim">
+          <Key>
+            <PropertyRef Name="Iletisim_Id" />
+          </Key>
+          <Property Name="Iletisim_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Iletisim_Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Iletisim_Tel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Kategori">
+          <Key>
+            <PropertyRef Name="Kategori_Id" />
+          </Key>
+          <Property Name="Kategori_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kategori_Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Uruns" Relationship="Self.FK_Urun_Kategori" FromRole="Kategori" ToRole="Urun" />
+        </EntityType>
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="Login_Id" />
+          </Key>
+          <Property Name="Login_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Login_Username" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Login_Pass" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Urun">
+          <Key>
+            <PropertyRef Name="Urun_Id" />
+          </Key>
+          <Property Name="Urun_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Urun_Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Urun_Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Kategori_FK" Type="Int32" />
+          <Property Name="Boyut_FK" Type="Int32" />
+          <NavigationProperty Name="Boyut" Relationship="Self.FK_Urun_Boyut" FromRole="Urun" ToRole="Boyut" />
+          <NavigationProperty Name="Kategori" Relationship="Self.FK_Urun_Kategori" FromRole="Urun" ToRole="Kategori" />
+        </EntityType>
+        <EntityType Name="Bilgi">
+          <Key>
+            <PropertyRef Name="Bilgi_Id" />
+          </Key>
+          <Property Name="Bilgi_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Bilgi_Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Bilgi_Icerik" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <Association Name="FK_Urun_Boyut">
+          <End Role="Boyut" Type="Self.Boyut" Multiplicity="0..1" />
+          <End Role="Urun" Type="Self.Urun" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Boyut">
+              <PropertyRef Name="Boyut_Id" />
+            </Principal>
+            <Dependent Role="Urun">
+              <PropertyRef Name="Boyut_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Urun_Kategori">
+          <End Role="Kategori" Type="Self.Kategori" Multiplicity="0..1" />
+          <End Role="Urun" Type="Self.Urun" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kategori">
+              <PropertyRef Name="Kategori_Id" />
+            </Principal>
+            <Dependent Role="Urun">
+              <PropertyRef Name="Kategori_FK" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="AydinAydinEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Boyuts" EntityType="Self.Boyut" />
+          <EntitySet Name="Degerlendirmes" EntityType="Self.Degerlendirme" />
+          <EntitySet Name="Galeris" EntityType="Self.Galeri" />
+          <EntitySet Name="Hakkindas" EntityType="Self.Hakkinda" />
+          <EntitySet Name="Iletisims" EntityType="Self.Iletisim" />
+          <EntitySet Name="Kategoris" EntityType="Self.Kategori" />
+          <EntitySet Name="Logins" EntityType="Self.Login" />
+          <EntitySet Name="Uruns" EntityType="Self.Urun" />
+          <EntitySet Name="Bilgis" EntityType="Self.Bilgi" />
+          <AssociationSet Name="FK_Urun_Boyut" Association="Self.FK_Urun_Boyut">
+            <End Role="Boyut" EntitySet="Boyuts" />
+            <End Role="Urun" EntitySet="Uruns" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Urun_Kategori" Association="Self.FK_Urun_Kategori">
+            <End Role="Kategori" EntitySet="Kategoris" />
+            <End Role="Urun" EntitySet="Uruns" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AydinAydinModelStoreContainer" CdmEntityContainer="AydinAydinEntities">
+          <EntitySetMapping Name="Boyuts">
+            <EntityTypeMapping TypeName="AydinAydinModel.Boyut">
+              <MappingFragment StoreEntitySet="Boyut">
+                <ScalarProperty Name="Boyut_Id" ColumnName="Boyut_Id" />
+                <ScalarProperty Name="Boyut_Adi" ColumnName="Boyut_Adi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Degerlendirmes">
+            <EntityTypeMapping TypeName="AydinAydinModel.Degerlendirme">
+              <MappingFragment StoreEntitySet="Degerlendirme">
+                <ScalarProperty Name="Degerlendirme_Id" ColumnName="Degerlendirme_Id" />
+                <ScalarProperty Name="Degerlendirme_Ad" ColumnName="Degerlendirme_Ad" />
+                <ScalarProperty Name="Degerlendirme_Aciklama" ColumnName="Degerlendirme_Aciklama" />
+                <ScalarProperty Name="Degerlendirme_Tarih" ColumnName="Degerlendirme_Tarih" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Galeris">
+            <EntityTypeMapping TypeName="AydinAydinModel.Galeri">
+              <MappingFragment StoreEntitySet="Galeri">
+                <ScalarProperty Name="Galeri_Id" ColumnName="Galeri_Id" />
+                <ScalarProperty Name="Galeri_Adi" ColumnName="Galeri_Adi" />
+                <ScalarProperty Name="Galeri_Yeri" ColumnName="Galeri_Yeri" />
+                <ScalarProperty Name="Galeri_Tarih" ColumnName="Galeri_Tarih" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Hakkindas">
+            <EntityTypeMapping TypeName="AydinAydinModel.Hakkinda">
+              <MappingFragment StoreEntitySet="Hakkinda">
+                <ScalarProperty Name="Hakkinda_Id" ColumnName="Hakkinda_Id" />
+                <ScalarProperty Name="Hakkinda_Aciklama" ColumnName="Hakkinda_Aciklama" />
+                <ScalarProperty Name="Hakkinda_Adres" ColumnName="Hakkinda_Adres" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Iletisims">
+            <EntityTypeMapping TypeName="AydinAydinModel.Iletisim">
+              <MappingFragment StoreEntitySet="Iletisim">
+                <ScalarProperty Name="Iletisim_Id" ColumnName="Iletisim_Id" />
+                <ScalarProperty Name="Iletisim_Mail" ColumnName="Iletisim_Mail" />
+                <ScalarProperty Name="Iletisim_Tel" ColumnName="Iletisim_Tel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kategoris">
+            <EntityTypeMapping TypeName="AydinAydinModel.Kategori">
+              <MappingFragment StoreEntitySet="Kategori">
+                <ScalarProperty Name="Kategori_Id" ColumnName="Kategori_Id" />
+                <ScalarProperty Name="Kategori_Adi" ColumnName="Kategori_Adi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Logins">
+            <EntityTypeMapping TypeName="AydinAydinModel.Login">
+              <MappingFragment StoreEntitySet="Login">
+                <ScalarProperty Name="Login_Id" ColumnName="Login_Id" />
+                <ScalarProperty Name="Login_Username" ColumnName="Login_Username" />
+                <ScalarProperty Name="Login_Pass" ColumnName="Login_Pass" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Uruns">
+            <EntityTypeMapping TypeName="AydinAydinModel.Urun">
+              <MappingFragment StoreEntitySet="Urun">
+                <ScalarProperty Name="Urun_Id" ColumnName="Urun_Id" />
+                <ScalarProperty Name="Urun_Adi" ColumnName="Urun_Adi" />
+                <ScalarProperty Name="Urun_Aciklama" ColumnName="Urun_Aciklama" />
+                <ScalarProperty Name="Kategori_FK" ColumnName="Kategori_FK" />
+                <ScalarProperty Name="Boyut_FK" ColumnName="Boyut_FK" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Bilgis">
+            <EntityTypeMapping TypeName="AydinAydinModel.Bilgi">
+              <MappingFragment StoreEntitySet="Bilgi">
+                <ScalarProperty Name="Bilgi_Id" ColumnName="Bilgi_Id" />
+                <ScalarProperty Name="Bilgi_Ad" ColumnName="Bilgi_Ad" />
+                <ScalarProperty Name="Bilgi_Icerik" ColumnName="Bilgi_Icerik" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

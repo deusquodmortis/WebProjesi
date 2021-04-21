@@ -57,3 +57,10 @@ C:\Users\unalk\source\repos\WebProjesi\WebProjesi\obj\Debug\WebProjesi.csproj.Co
 C:\Users\unalk\source\repos\WebProjesi\WebProjesi\obj\Debug\WebProjesi.csproj.CopyComplete
 C:\Users\unalk\source\repos\WebProjesi\WebProjesi\obj\Debug\WebProjesi.dll
 C:\Users\unalk\source\repos\WebProjesi\WebProjesi\obj\Debug\WebProjesi.pdb
+C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\WebProje.Business.dll
+C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\WebProje.DataAccess.dll
+C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\WebProje.Business.pdb
+C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\WebProje.DataAccess.pdb
+C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\EntityFramework.dll
+C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\WebProje.DataAccess.dll.config
+C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\EntityFramework.xml

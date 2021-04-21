@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AydinAydinModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Boyut">
+    <Key>
+      <PropertyRef Name="Boyut_Id" />
+    </Key>
+    <Property Name="Boyut_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Boyut_Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Uruns" Relationship="Self.FK_Urun_Boyut" FromRole="Boyut" ToRole="Urun" />
+  </EntityType>
+  <EntityType Name="Degerlendirme">
+    <Key>
+      <PropertyRef Name="Degerlendirme_Id" />
+    </Key>
+    <Property Name="Degerlendirme_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Degerlendirme_Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Degerlendirme_Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Degerlendirme_Tarih" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Galeri">
+    <Key>
+      <PropertyRef Name="Galeri_Id" />
+    </Key>
+    <Property Name="Galeri_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Galeri_Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Galeri_Yeri" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Galeri_Tarih" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Hakkinda">
+    <Key>
+      <PropertyRef Name="Hakkinda_Id" />
+    </Key>
+    <Property Name="Hakkinda_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Hakkinda_Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Hakkinda_Adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Iletisim">
+    <Key>
+      <PropertyRef Name="Iletisim_Id" />
+    </Key>
+    <Property Name="Iletisim_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Iletisim_Mail" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Iletisim_Tel" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Kategori">
+    <Key>
+      <PropertyRef Name="Kategori_Id" />
+    </Key>
+    <Property Name="Kategori_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Kategori_Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Uruns" Relationship="Self.FK_Urun_Kategori" FromRole="Kategori" ToRole="Urun" />
+  </EntityType>
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="Login_Id" />
+    </Key>
+    <Property Name="Login_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login_Username" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Login_Pass" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Urun">
+    <Key>
+      <PropertyRef Name="Urun_Id" />
+    </Key>
+    <Property Name="Urun_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Urun_Adi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Urun_Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Kategori_FK" Type="Int32" />
+    <Property Name="Boyut_FK" Type="Int32" />
+    <NavigationProperty Name="Boyut" Relationship="Self.FK_Urun_Boyut" FromRole="Urun" ToRole="Boyut" />
+    <NavigationProperty Name="Kategori" Relationship="Self.FK_Urun_Kategori" FromRole="Urun" ToRole="Kategori" />
+  </EntityType>
+  <EntityType Name="Bilgi">
+    <Key>
+      <PropertyRef Name="Bilgi_Id" />
+    </Key>
+    <Property Name="Bilgi_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Bilgi_Ad" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Bilgi_Icerik" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK_Urun_Boyut">
+    <End Role="Boyut" Type="Self.Boyut" Multiplicity="0..1" />
+    <End Role="Urun" Type="Self.Urun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Boyut">
+        <PropertyRef Name="Boyut_Id" />
+      </Principal>
+      <Dependent Role="Urun">
+        <PropertyRef Name="Boyut_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Urun_Kategori">
+    <End Role="Kategori" Type="Self.Kategori" Multiplicity="0..1" />
+    <End Role="Urun" Type="Self.Urun" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kategori">
+        <PropertyRef Name="Kategori_Id" />
+      </Principal>
+      <Dependent Role="Urun">
+        <PropertyRef Name="Kategori_FK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AydinAydinEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Boyuts" EntityType="Self.Boyut" />
+    <EntitySet Name="Degerlendirmes" EntityType="Self.Degerlendirme" />
+    <EntitySet Name="Galeris" EntityType="Self.Galeri" />
+    <EntitySet Name="Hakkindas" EntityType="Self.Hakkinda" />
+    <EntitySet Name="Iletisims" EntityType="Self.Iletisim" />
+    <EntitySet Name="Kategoris" EntityType="Self.Kategori" />
+    <EntitySet Name="Logins" EntityType="Self.Login" />
+    <EntitySet Name="Uruns" EntityType="Self.Urun" />
+    <EntitySet Name="Bilgis" EntityType="Self.Bilgi" />
+    <AssociationSet Name="FK_Urun_Boyut" Association="Self.FK_Urun_Boyut">
+      <End Role="Boyut" EntitySet="Boyuts" />
+      <End Role="Urun" EntitySet="Uruns" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Urun_Kategori" Association="Self.FK_Urun_Kategori">
+      <End Role="Kategori" EntitySet="Kategoris" />
+      <End Role="Urun" EntitySet="Uruns" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

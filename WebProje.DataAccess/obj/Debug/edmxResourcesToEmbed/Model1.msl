@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AydinAydinModelStoreContainer" CdmEntityContainer="AydinAydinEntities">
+    <EntitySetMapping Name="Boyuts">
+      <EntityTypeMapping TypeName="AydinAydinModel.Boyut">
+        <MappingFragment StoreEntitySet="Boyut">
+          <ScalarProperty Name="Boyut_Id" ColumnName="Boyut_Id" />
+          <ScalarProperty Name="Boyut_Adi" ColumnName="Boyut_Adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Degerlendirmes">
+      <EntityTypeMapping TypeName="AydinAydinModel.Degerlendirme">
+        <MappingFragment StoreEntitySet="Degerlendirme">
+          <ScalarProperty Name="Degerlendirme_Id" ColumnName="Degerlendirme_Id" />
+          <ScalarProperty Name="Degerlendirme_Ad" ColumnName="Degerlendirme_Ad" />
+          <ScalarProperty Name="Degerlendirme_Aciklama" ColumnName="Degerlendirme_Aciklama" />
+          <ScalarProperty Name="Degerlendirme_Tarih" ColumnName="Degerlendirme_Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Galeris">
+      <EntityTypeMapping TypeName="AydinAydinModel.Galeri">
+        <MappingFragment StoreEntitySet="Galeri">
+          <ScalarProperty Name="Galeri_Id" ColumnName="Galeri_Id" />
+          <ScalarProperty Name="Galeri_Adi" ColumnName="Galeri_Adi" />
+          <ScalarProperty Name="Galeri_Yeri" ColumnName="Galeri_Yeri" />
+          <ScalarProperty Name="Galeri_Tarih" ColumnName="Galeri_Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Hakkindas">
+      <EntityTypeMapping TypeName="AydinAydinModel.Hakkinda">
+        <MappingFragment StoreEntitySet="Hakkinda">
+          <ScalarProperty Name="Hakkinda_Id" ColumnName="Hakkinda_Id" />
+          <ScalarProperty Name="Hakkinda_Aciklama" ColumnName="Hakkinda_Aciklama" />
+          <ScalarProperty Name="Hakkinda_Adres" ColumnName="Hakkinda_Adres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Iletisims">
+      <EntityTypeMapping TypeName="AydinAydinModel.Iletisim">
+        <MappingFragment StoreEntitySet="Iletisim">
+          <ScalarProperty Name="Iletisim_Id" ColumnName="Iletisim_Id" />
+          <ScalarProperty Name="Iletisim_Mail" ColumnName="Iletisim_Mail" />
+          <ScalarProperty Name="Iletisim_Tel" ColumnName="Iletisim_Tel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kategoris">
+      <EntityTypeMapping TypeName="AydinAydinModel.Kategori">
+        <MappingFragment StoreEntitySet="Kategori">
+          <ScalarProperty Name="Kategori_Id" ColumnName="Kategori_Id" />
+          <ScalarProperty Name="Kategori_Adi" ColumnName="Kategori_Adi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="AydinAydinModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="Login_Id" ColumnName="Login_Id" />
+          <ScalarProperty Name="Login_Username" ColumnName="Login_Username" />
+          <ScalarProperty Name="Login_Pass" ColumnName="Login_Pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uruns">
+      <EntityTypeMapping TypeName="AydinAydinModel.Urun">
+        <MappingFragment StoreEntitySet="Urun">
+          <ScalarProperty Name="Urun_Id" ColumnName="Urun_Id" />
+          <ScalarProperty Name="Urun_Adi" ColumnName="Urun_Adi" />
+          <ScalarProperty Name="Urun_Aciklama" ColumnName="Urun_Aciklama" />
+          <ScalarProperty Name="Kategori_FK" ColumnName="Kategori_FK" />
+          <ScalarProperty Name="Boyut_FK" ColumnName="Boyut_FK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Bilgis">
+      <EntityTypeMapping TypeName="AydinAydinModel.Bilgi">
+        <MappingFragment StoreEntitySet="Bilgi">
+          <ScalarProperty Name="Bilgi_Id" ColumnName="Bilgi_Id" />
+          <ScalarProperty Name="Bilgi_Ad" ColumnName="Bilgi_Ad" />
+          <ScalarProperty Name="Bilgi_Icerik" ColumnName="Bilgi_Icerik" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
