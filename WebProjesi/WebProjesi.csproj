@@ -132,6 +132,7 @@
     <Content Include="images\favicon.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\logo2.png" />
+    <Content Include="Resources1\img\forest.jpg" />
     <Content Include="Resources1\img\logo\logo.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -166,6 +167,7 @@
     <Content Include="assets\scss\style.scss" />
     <Content Include="images\.gitignore" />
     <Content Include="images\logo.psd" />
+    <Content Include="AdminBilgi.aspx" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -526,6 +528,13 @@
     </Compile>
     <Compile Include="AdminDefault.aspx.designer.cs">
       <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminBilgi.aspx.cs">
+      <DependentUpon>AdminBilgi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminBilgi.aspx.designer.cs">
+      <DependentUpon>AdminBilgi.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

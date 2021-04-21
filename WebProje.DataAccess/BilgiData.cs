@@ -31,7 +31,32 @@ namespace WebProje.DataAccess
             }
             con.Close();
         }
+        public void BilgiEkle(string info_name, string info_detail)
+        {
+            SqlConnection con = baglanti.Baglan();
+            SqlCommand komut = new SqlCommand("INSERT INTO Bilgi VALUES ('" + info_name + "','"+ info_detail+"')", con);
+            con.Open();
+            komut.ExecuteNonQuery();
+            con.Close();
 
+        }
+        public void BilgiUpdate(string old_info, string info_name, string info_detail)
+        {
+            SqlConnection con = baglanti.Baglan();
+            SqlCommand komut = new SqlCommand("UPDATE Bilgi set Bilgi_Ad='"+info_name+"',Bilgi_Icerik='"+info_detail+"' where Bilgi_Ad='"+old_info+"'", con);
+            con.Open();
+            komut.ExecuteNonQuery();
+            con.Close();
+        }
+
+        public void BilgiSil(string info_name)
+        {
+            SqlConnection con = baglanti.Baglan();
+            SqlCommand komut = new SqlCommand("DELETE from Bilgi where Bilgi_Ad='"+info_name+"'", con);
+            con.Open();
+            komut.ExecuteNonQuery();
+            con.Close();
+        }
         public void BoyutEkle(string size2)
         {
             SqlConnection con = baglanti.Baglan();
