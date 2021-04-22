@@ -15,6 +15,18 @@ namespace WebProjesi
         {
 
         }
-        public void Save_Size(object sender, EventArgs e) { baglanti.BoyutEkle(size1.Value); }
+        //public void Save_Size(object sender, EventArgs e) { baglanti.BoyutEkle(size1.Value); }
+        protected void Bilgi_Kayit(object sender, EventArgs e)
+        {
+            baglanti.BilgiEkle(bilgi_ad.Value, bilgi_icerik.Value);
+        }
+        protected void Bilgi_Update(object sender, EventArgs e)
+        {
+            baglanti.BilgiUpdate(update_old.Value, update_new.Value, update_detail.Value);
+        }
+        protected void Bilgi_Sil(object sender, EventArgs e)
+        {
+            baglanti.BilgiSil(Del.Value);
+        }
     }
 }
