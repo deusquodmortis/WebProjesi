@@ -64,3 +64,6 @@ C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\WebProje.DataAccess.pdb
 C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\EntityFramework.dll
 C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\WebProje.DataAccess.dll.config
 C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\EntityFramework.xml
+C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\WebProje.Business.dll.config
+C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\EntityFramework.SqlServer.dll
+C:\Users\unalk\source\repos\WebProjesi\WebProjesi\bin\EntityFramework.SqlServer.xml

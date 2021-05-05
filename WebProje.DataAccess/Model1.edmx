@@ -4,9 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="AydinAydinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'AydinAydin.dbo.Bilgi' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+    <Schema Namespace="AydinAydinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Bilgi">
           <Key>
             <PropertyRef Name="Bilgi_Id" />
@@ -106,6 +104,7 @@ warning 6002: The table/view 'AydinAydin.dbo.Bilgi' does not have a primary key 
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="AydinAydinModelStoreContainer">
+          <EntitySet Name="Bilgi" EntityType="Self.Bilgi" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Boyut" EntityType="Self.Boyut" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Degerlendirme" EntityType="Self.Degerlendirme" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Galeri" EntityType="Self.Galeri" Schema="dbo" store:Type="Tables" />
@@ -114,13 +113,6 @@ warning 6002: The table/view 'AydinAydin.dbo.Bilgi' does not have a primary key 
           <EntitySet Name="Kategori" EntityType="Self.Kategori" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Urun" EntityType="Self.Urun" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Bilgi" EntityType="Self.Bilgi" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [Bilgi].[Bilgi_Id] AS [Bilgi_Id], 
-    [Bilgi].[Bilgi_Ad] AS [Bilgi_Ad], 
-    [Bilgi].[Bilgi_Icerik] AS [Bilgi_Icerik]
-    FROM [dbo].[Bilgi] AS [Bilgi]</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="FK_Urun_Boyut" Association="Self.FK_Urun_Boyut">
             <End Role="Boyut" EntitySet="Boyut" />
             <End Role="Urun" EntitySet="Urun" />
@@ -130,8 +122,7 @@ warning 6002: The table/view 'AydinAydin.dbo.Bilgi' does not have a primary key 
             <End Role="Urun" EntitySet="Urun" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="AydinAydinModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">

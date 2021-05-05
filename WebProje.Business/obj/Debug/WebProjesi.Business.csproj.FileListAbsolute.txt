@@ -4,3 +4,12 @@ C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\obj\Debug\WebProjesi.Bu
 C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\obj\Debug\WebProjesi.Business.csproj.CoreCompileInputs.cache
 C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\obj\Debug\WebProje.Business.dll
 C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\obj\Debug\WebProje.Business.pdb
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\bin\Debug\WebProje.Business.dll.config
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\bin\Debug\EntityFramework.dll
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\bin\Debug\WebProje.DataAccess.dll
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\bin\Debug\WebProje.DataAccess.pdb
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\bin\Debug\WebProje.DataAccess.dll.config
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\bin\Debug\EntityFramework.xml
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\unalk\source\repos\WebProjesi\WebProje.Business\obj\Debug\WebProjesi.Business.csproj.CopyComplete
