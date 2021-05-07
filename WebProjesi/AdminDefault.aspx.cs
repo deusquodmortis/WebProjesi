@@ -10,7 +10,7 @@ namespace WebProjesi
 {
     public partial class WebForm6 : System.Web.UI.Page
     {
-        BilgiData baglanti = new BilgiData();
+        //BilgiData baglanti = new BilgiData();
         WebProje.Business.BusinessBilgi blink = new WebProje.Business.BusinessBilgi();
         Bilgi nesne = new Bilgi();
         protected void Page_Load(object sender, EventArgs e)

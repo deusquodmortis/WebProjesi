@@ -7,17 +7,22 @@ using System.Web.UI.WebControls;
 
 namespace WebProjesi
 {
-    public partial class Admin : System.Web.UI.MasterPage
+    public partial class WebForm8 : System.Web.UI.Page
     {
         Services.WebService a = new Services.WebService();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            Text1.InnerText = DateTime.Now.ToString();
-            Timer1.Enabled = true;
+
+            
+
         }
-        public void Timer_Tick(object sender, EventArgs e)
+        protected void HakkindaEkle()
         {
-            Text1.InnerText = a.SaatGetir();
+            
         }
+
+       
+        
     }
 }

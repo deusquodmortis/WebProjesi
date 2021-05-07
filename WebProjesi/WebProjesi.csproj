@@ -175,6 +175,7 @@
     <Content Include="images\.gitignore" />
     <Content Include="images\logo.psd" />
     <Content Include="AdminBilgi.aspx" />
+    <Content Include="AdminHakkinda.aspx" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-3.0.0.js" />
     <Content Include="Scripts\jquery-3.0.0.min.js" />
@@ -251,6 +252,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Services\WebService.asmx" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
     <Content Include="Bilgi.aspx" />
@@ -542,6 +544,17 @@
     </Compile>
     <Compile Include="AdminBilgi.aspx.designer.cs">
       <DependentUpon>AdminBilgi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHakkinda.aspx.cs">
+      <DependentUpon>AdminHakkinda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHakkinda.aspx.designer.cs">
+      <DependentUpon>AdminHakkinda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
