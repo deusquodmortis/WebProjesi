@@ -136,6 +136,7 @@
     <Content Include="images\avatar\6.jpg" />
     <Content Include="images\avatar\64-1.jpg" />
     <Content Include="images\avatar\64-2.jpg" />
+    <Content Include="images\contactus.png" />
     <Content Include="images\favicon.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\logo2.png" />
