@@ -41,26 +41,14 @@
                         <a href="#"><i class="menu-icon ti-email"></i>Galeri </a>
                     </li>
                     <li>
-                        <a href="#"><i class="menu-icon ti-email"></i>Blog </a>
+                        <a href="#"><i class="menu-icon ti-email"></i>Hakkımızda </a>
                     </li>
                     <li>
                         <a href="#"><i class="menu-icon ti-email"></i>İletişim </a>
-                    </li>
-
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-tasks"></i>Arızalar</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Kategori Ekle</a></li>
-                            <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Themefy İçerik Ekle</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="menu-icon fa fa-tasks"></i>Malzemeler</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="MalzemeKategori.aspx">Kategori Ekle</a></li>
-                            <li><i class="menu-icon ti-themify-logo"></i><a href="Malzemeler.aspx">İçerik Ekle</a></li>
-                        </ul>
-                    </li>                    
+                    </li>     
+                    <li>
+                        <a href="#"><i class="menu-icon ti-email"></i>Ürünler </a>
+                    </li>   
                 </ul>
             </div>
         </nav>

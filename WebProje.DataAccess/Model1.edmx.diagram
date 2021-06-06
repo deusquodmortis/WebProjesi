@@ -11,7 +11,7 @@
         <EntityTypeShape EntityType="AydinAydinModel.Hakkinda" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AydinAydinModel.Iletisim" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AydinAydinModel.Kategori" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="AydinAydinModel.Login" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AydinAydinModel.Login" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="AydinAydinModel.Urun" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="AydinAydinModel.Bilgi" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
         <AssociationConnector Association="AydinAydinModel.FK_Urun_Boyut" ManuallyRouted="false" />
