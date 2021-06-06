@@ -64,7 +64,7 @@
                                         <li><a href="Galeri.aspx">Galeri</a></li>
                                         <li><a href="Bilgi.aspx">Bilgi</a></li>
                                         <li><a href="Iletisim.aspx">İletişim</a></li>
-                                        <li><a href="AdminDefault.aspx">AdminPanel(Simdilik)</a></li>
+                                        <%--<li><a href="AdminDefault.aspx">AdminPanel(Simdilik)</a></li>--%>
                                     </ul>
                                 </nav>
                             </div>

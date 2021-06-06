@@ -2,6 +2,29 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class=" container row" style="margin-left:160px;">
+    <div class="card col m-2">
+  <div class="card-header">
+    Genel
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Agaçlar hakkında</h5>
+    <p class="card-text">En ince ayrıntısına kadar her bilgiyi öğrenemek için tıklayın.</p>
+    <a href="#" class="btn btn-primary">Git</a>
+  </div>
+</div>
+    <div class="card col m-2">
+  <div class="card-header">
+    Kullanım
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Kullanım alanları</h5>
+    <p class="card-text">Hakkında herşeyi öğrenenmek için tıklayın.</p>
+    <a href="#" class="btn btn-primary">Git</a>
+  </div>
+</div>
+        </div>
+    <div class="container">
     <div class="accordion col-sm p-4" id="accordionExample">
   <div class="accordion-item" >
     <h2 class="accordion-header" id="headingOne" >
@@ -37,4 +60,5 @@
     </div>
   </div>
 </div>
+        </div>
 </asp:Content>
